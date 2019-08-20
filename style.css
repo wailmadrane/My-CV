@@ -22,17 +22,21 @@ aside {
 
 .title::after {
    content: '';
-   display: inline-block;
+   display: block;
    height: 1px;
-   width: 100%;
+   width: 100vw;
    background-color: #000;
 
    position: absolute;
    top: 50%;
-   right: -100%;
+   left: calc(100% + 1rem);
    transform: translateY(-50%);
 }
 
 .title--bold {
    font-weight: bold;
+}
+
+main section{
+   overflow-x: hidden;
 }
