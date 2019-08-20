@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+body {
+   font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   text-transform: uppercase;
+}
+
+aside {
+   background-color: aquamarine;
+}
+
+.title {
+   position: relative;
+   display: inline-block;
+   font-weight: lighter;
+}
+
+.title::after {
+   content: '';
+   display: inline-block;
+   height: 1px;
+   width: 100%;
+   background-color: #000;
+
+   position: absolute;
+   top: 50%;
+   right: -100%;
+   transform: translateY(-50%);
+}
+
+.title--bold {
+   font-weight: bold;
+}
