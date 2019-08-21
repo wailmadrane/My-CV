@@ -9,74 +9,172 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <main class="grid">
 
-   <!-- ## Aside ## -->
-   <aside>
-      <div class="photo">
-         <!-- <img src="" alt="profile"> -->
-      </div>
-
-      <div class="education">
-         <h2 class="title title--bold">education</h2>
-         <p><strong>Lorem ipsum dolor sit amet</strong> consectetur adipisicing elit</p>
-      </div>
-
-      <div class="contact">
-
-         <div class="phone">
-            +32487604630
+      <!-- ## Aside ## -->
+      <aside>
+         <div class="profile">
+            <div class="photo">
+            <img src="assets/img/photo@2x.png" alt="profile">
+            </div>
+            
+            <div class="education">
+            <h2 class="title title--aside">education</h2>
+            <p class="education__profile-desc">I'm very passionate about everything that touches to programming. I love to discover new technologies, learning new languages and share my excitement with others.</p>
+            </div>
          </div>
 
-         <div class="email">
-            <a href="mailto:wail.madrane@gmail.com">wail.madrane@gmail.com</a>
+         <div class="contact">
+
+            <div class="contact__phone">
+               <img class="contact__logo" src="/assets/img/phone@2x.png" alt="mobile">
+               <div class="contact__text">+32487604630</div>
+            </div>
+
+            <div class="contact__email">
+               <img class="contact__logo" src="assets/img/email@2x.png" alt="email">
+               <a class="contact__text" href="mailto:wail.madrane@gmail.com">wail.madrane@gmail.com</a>
+            </div>
+
+            <div class="contact__adress">
+               <img class="contact__logo" src="assets/img/pin@2x.png" alt="address">
+               <address class="contact__text">Brussellesesteenweg 323, 1730 Asse</address>
+            </div>
+
          </div>
 
-         <div class="adress">
-            Brussellesesteenweg 323, 1730 Asse
+         <div class="languages">
+            <h2 class="title title--aside">languages</h2>
+            <div class="languages__french">
+               <h3>
+                  French
+               </h3>
+               Mother tongue
+            </div>
+            <div class="languages__english">
+               <h3>
+                  English
+               </h3>
+               Advanced level
+            </div>
+            <div class="languages__dutch">
+               <h3>
+                  Dutch
+               </h3>
+               Intermediate level
+            </div>
          </div>
+      </aside>
 
-      </div>
+      <!-- ## Header ## -->
+      <header class="hero">
+         <h1>
+            <strong class="hero__title"><span class="hero__title--light">Wail</span> Madrane</strong>
+            <em class="hero__subtitle">Full-stack developer</em>
+         </h1>
+      </header>
 
-      <div class="languages">
-         <h2 class="title title--bold">languages</h2>
-      </div>
-   </aside>
+      <!-- ## Main ## -->
 
-   <!-- ## Header ## -->
-   <header>
-      <h1>
-         <strong>Wail Madrane</strong>
-         <em>Software Analyst Developper</em>
-      </h1>
-   </header>
-
-   <!-- ## Main ## -->
-   <main>
-      <section class="experience blue">
+      <section class="experience">
          <h2 class="title">experience</h2>
-         <article>
-            <span class="date">2019</span>
-            <p><strong>Lorem ipsum dolor sit amet consectetur</strong> adipisicing elit. Quisquam, voluptas rerum culpa qui voluptatem blanditiis asperiores alias nesciunt corrupti! Atque, sit quidem ad eos autem sed molestias vero consectetur nesciunt.</p>
+
+         <article data-date=2018>
+            <p>Front end developer internship,
+            Morris & Chapman</p>
          </article>
 
          <article>
-            <span class="date">2018</span>
-            <p><strong>Lorem ipsum dolor sit amet consectetur</strong> adipisicing elit. Quisquam, voluptas rerum culpa qui voluptatem blanditiis asperiores alias nesciunt corrupti! Atque, sit quidem ad eos autem sed molestias vero consectetur nesciunt.</p>
+            <p>MOTION DESIGN AND ANIMATION internship,
+            Bonjour Agency</p>
          </article>
+
+         <article>
+            <p>Webdesign internship,
+            Groupe Rossel (Le soir journal)</p>
+         </article>
+
+         <article>
+            <p>AIDS prevention poster,
+            SOS Sida</p>
+         </article>
+
+         <article data-date=2010>
+            <p>Belgian selections finalist,
+            World Skills Contest (infographic)</p>
+         </article>
+
       </section>
 
-      <section class="achievements">
-         <h2 class="title">achievements</h2>
+      <section class="education">
+         <h2 class="title">education</h2>
+
+         <article data-date=2018>
+            <p>Front-End Developer (Web Designer),
+            CEPEGRA</p>
+         </article>
+   
+         <article>
+            <p>Bachelor's degree in computer graphics,
+            Haute école Francisco Ferrer</p>
+         </article>
+   
+         <article>
+            <p>Advertising assistant,
+            Centre Scolaire de Ma Campagne</p>
+         </article>
+   
+         <article data-date=2007>
+            <p>Applied arts,
+            Centre Scolaire de Ma Campagne</p>
+         </article>
+
       </section>
 
       <section class="skills">
          <h2 class="title">skills</h2>
+
+         <table class="skills-data">
+            <tr>
+               <th scope="col">web</th>
+               <td>HTML5/CSS3, Sass, JavaScript</td>
+            </tr>
+
+            <tr>
+               <th scope="col">cms</th>
+               <td>Wordpress</td>
+            </tr>
+
+            <tr>
+               <th scope="col">fmk/lib</th>
+               <td>Vue, React, Jquery, Handlebars</td>
+            </tr>
+   
+            <tr>
+               <th scope="col">oop</th>
+               <td>PHP, Node.js, Typescript</td>
+            </tr>
+
+            <tr>
+               <th scope="col">database</th>
+               <td>MySQL, MongoDB</td>
+            </tr>
+
+            <tr>
+               <th scope="col">ide</th>
+               <td>Visual Studio Code, Atom, Sublime text</td>
+            </tr>
+
+            <tr>
+               <th scope="col">others</th>
+               <td>Git, Gulp4, Npm, Yarn, Adobe Creative Suite,
+               Postman</td>
+            </tr>
+
+         </table>
+
       </section>
+
    </main>
-
-    <!-- ## Footer ## -->
-   <footer>
-
-   </footer>
 </body>
 </html>
